@@ -127,7 +127,7 @@ class Provider extends AbstractProvider implements SocialiteProvider
 
     public function __construct(Request $request)
     {
-        parent::__construct($request, '', '', '');
+        parent::__construct($request, '', '', '', ['verify' => false]);
         $this->messageContext = new MessageContext();
     }
 
